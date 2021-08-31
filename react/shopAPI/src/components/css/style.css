@@ -1,0 +1,169 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.primary-wrapper {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    border: 1px solid black;
+}
+.tutorial, .invintory, .order {
+    width: 33.33%;
+    border: 1px  solid rgb(29, 29, 29);
+}
+body {
+    background-color: rgb(252, 252, 252);
+}
+.shop-form {
+    width: 400px;
+    margin: 100px auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: rgb(46, 53, 59);
+    color: white;
+    box-shadow: -3px 3px 12px 0px black;
+}
+.shop-form h2 {
+    padding-bottom: 20px;
+}
+.shop-form input {
+    margin-right: 10px;
+    padding: 10px;
+}
+.shop-form button {
+    padding: 10px;
+}
+.invintory {
+    text-align: center;
+    padding: 10px 50px;
+}
+.invintory h2 {
+    margin-top: 25px;
+}
+.form-invintory {
+    display: flex;
+    /* width: 300px; */
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px auto;
+    padding: 0px 10px;
+}
+.form-invintory input {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.form-invintory select {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.form-invintory textarea {
+    margin-bottom: 10px;
+    height: 100px;
+    padding: 5px 2px;
+}
+.form-invintory button {
+    padding: 10px 5px;
+}
+.product-container {
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    padding: 10px 0px;
+}
+.product-container img {
+    width: 120px;
+    min-height: 80px;
+    margin-right: 10px;
+    margin-left: 10px;
+    box-shadow: -5px 2px 5px 0px black;
+}
+.product-detail {
+    display: flex;
+    flex-direction: column;
+    border-left:  1px solid black;
+    padding: 5px 10px;
+    box-shadow: -4px 0px 7px 0px rgba(114, 114, 114, 0.555);
+    width: 90%;
+    margin-right: 10px;
+}
+.product-name {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.price {
+    font-size: 16px;
+}
+.add-to-order {
+    flex-grow: 1;
+    height: 30px;
+    margin-top: 10px;
+    background-color: #333;
+    border: none;    
+    color: white;
+}
+.add-to-order:hover {
+    border: 1px solid rgb(56, 56, 56);
+    transform: scale(1.01);
+}
+.add-to-order:disabled:hover {
+    border: none;
+    transform: scale(1);
+}
+.add-to-order:disabled {
+    color: rgb(185, 185, 185);
+}
+.header {
+    text-align: center;
+    padding: 10px 0px;
+}
+.order {
+    padding: 0px 10px;
+    padding-top: 10px;
+}
+.order h2 {
+    text-align: center;
+}
+.order-section-wrapper {
+    list-style: none;
+    padding-top: 10px;
+}
+.order-section-wrapper li {
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    padding-top: 40px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(59, 145, 196);
+    color: white;
+    justify-content: space-between;
+}
+.order-section-li i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgb(190, 16, 16);
+    font-size: 20px;
+    cursor: pointer;
+}
+.order-section-wrapper .total {
+    background-color: rgb(187, 61, 39);
+}
+.order-section-wrapper .price {
+    text-align: right;
+}
+.order-section-wrapper p {
+    margin-top: 10px;
+}
+.order-section-wrapper span {
+    width: 50%;    
+}
+/* @media width(720px){
+    .invintory {
+        padding: 0px;
+    }
+} */

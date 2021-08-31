@@ -1,0 +1,49 @@
+/* general style */
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(250, 250, 250);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* display counter style */
+.txt-wrapper {
+  text-align: center;
+  margin-top: 200px;
+}
+.txt {
+  font-size: 22px;
+  font-weight: bold;
+  color: rgb(25, 45, 54);
+  display: block;
+}
+.cnt {
+  margin: 20px;
+  display: block;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+}
+.btn-wrapper {
+  text-align: center;
+}
+/* control button style */
+.btn {
+  margin: 10px 10px;
+  width: 150px;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(8, 8, 8);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+.btn:hover {
+  border: none;
+  cursor: pointer;
+  transform: scale(1.06);
+  background-color: rgb(36, 46, 58);
+  color: white;
+}

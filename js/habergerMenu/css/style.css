@@ -1,0 +1,116 @@
+/* general style */
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: rgb(230, 244, 248);
+}
+.wrapper {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: -1px 1px 8px 0px rgba(44, 44, 44, 0.514);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.wrapper > span {
+  text-shadow: 1px 1px 3px rgba(128, 128, 128, 0.699);
+  font-size: 22px;
+  margin: 15px 10px;
+}
+.logo {
+  color: rgb(83, 169, 255);
+}
+.menu {
+  display: flex;
+}
+.menu li {
+  margin: 20px 15px;
+}
+.menu a {
+  color: gray;
+}
+.icons i {
+  font-size: 18px;
+  margin: 0px 5px;
+  color: rgb(83, 169, 255);
+  cursor: pointer;
+}
+.menu-bar {
+  display: none;
+  margin: 0px 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.menu-bar:hover {
+  transform: rotateZ(90deg);
+}
+.menu-wrapper {
+  text-align: center;
+  position: relative;
+  z-index: -1;
+}
+.list-menu {
+  margin: 10px 0px;
+  width: 95%;
+  display: none;
+  position: absolute;
+  top: -200px;
+  left: 2.5%;
+  transition: 1s;
+}
+.add-animation {
+  display: none;
+  top: 0px;
+}
+.list-menu li {
+  background-color: #fff;
+  margin: 5px 0px;
+  padding: 10px 0px;
+  box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.452);
+  cursor: pointer;
+}
+.list-menu li:hover {
+  background-color: rgb(83, 169, 255);
+}
+@keyframes transf {
+  from {
+    top: -200px;
+  }
+  to {
+    top: 0px;
+  }
+}
+@media (max-width: 720px) {
+  .menu {
+    display: none;
+  }
+  .icons {
+    display: none;
+  }
+  .wrapper {
+    justify-content: space-between;
+  }
+  .menu-bar {
+    display: block;
+  }
+  .list-menu {
+    display: block;
+  }
+  .add-animation {
+    display: block;
+  }
+}

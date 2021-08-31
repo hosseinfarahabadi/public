@@ -1,0 +1,90 @@
+/* general  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+ul {
+  padding: 0px;
+}
+/* tasks box main */
+.wrapper {
+  width: 50%;
+  margin: 0px auto;
+}
+.task-wrapper {
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 100px;
+  text-align: center;
+  background-color: rgb(252, 252, 252);
+  box-shadow: -2px 1px 5px rgb(136, 136, 136);
+  border-radius: 8px;
+}
+.task-wrapper h1 {
+  padding-top: 15px;
+}
+/* tasks form */
+.task-form {
+  margin: 20px 0px;
+}
+.task-form button {
+  width: 100px;
+}
+.task-form input {
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid rgb(26, 31, 36);
+  margin-right: 50px;
+  outline: none;
+}
+/* filter form */
+.filter-form button {
+  width: 100px;
+}
+.filter-form input {
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid rgb(27, 35, 43);
+  margin-right: 50px;
+  outline: none;
+}
+/* display tasks */
+.task-list .task-item {
+  width: 100%;
+  display: flex;
+  margin: 10px 0px;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: 0.3s;
+  background-color: rgb(244, 246, 248);
+}
+.task-item:hover {
+  background-color: rgb(26, 36, 46);
+  transform: scale(1.01);
+  color: white;
+  box-shadow: -2px 1px 5px rgb(136, 136, 136);
+}
+.task-item i {
+  color: rgb(165, 7, 7);
+  font-size: 20px;
+}
+.task-list i:hover {
+  cursor: pointer;
+}
+.task-list .task-item i {
+  margin-left: auto;
+}
+.task-list-wrapper {
+  padding: 0px 20px;
+  padding-bottom: 10px;
+}
+.task-list-wrapper button {
+  display: block;
+  margin-left: auto;
+}
